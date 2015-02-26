@@ -6,9 +6,27 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F4D6BC6B1A9F30D600742FEB /* AdBlockForBS.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC6A1A9F30D600742FEB /* AdBlockForBS.m */; };
+		F4D6BC921A9F43E100742FEB /* CacheStoragePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC8D1A9F43E100742FEB /* CacheStoragePolicy.m */; };
+		F4D6BC931A9F43E100742FEB /* CanonicalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC8F1A9F43E100742FEB /* CanonicalRequest.m */; };
+		F4D6BC941A9F43E100742FEB /* CustomHTTPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC911A9F43E100742FEB /* CustomHTTPProtocol.m */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F4D6BC5F1A9F2FDC00742FEB /* AdBlockForBS.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdBlockForBS.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D6BC631A9F2FDC00742FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4D6BC691A9F30D600742FEB /* AdBlockForBS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdBlockForBS.h; sourceTree = "<group>"; };
+		F4D6BC6A1A9F30D600742FEB /* AdBlockForBS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdBlockForBS.m; sourceTree = "<group>"; };
+		F4D6BC881A9F3A6700742FEB /* PSPreviewerInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PSPreviewerInterface.h; path = AdBlockForBS/PSPreviewerInterface.h; sourceTree = "<group>"; };
+		F4D6BC891A9F3A6D00742FEB /* BSLinkPreviewDelegating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BSLinkPreviewDelegating.h; path = AdBlockForBS/BSLinkPreviewDelegating.h; sourceTree = "<group>"; };
+		F4D6BC8B1A9F3AC500742FEB /* BSPreviewPluginInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BSPreviewPluginInterface.h; path = AdBlockForBS/BSPreviewPluginInterface.h; sourceTree = "<group>"; };
+		F4D6BC8C1A9F43E100742FEB /* CacheStoragePolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheStoragePolicy.h; sourceTree = "<group>"; };
+		F4D6BC8D1A9F43E100742FEB /* CacheStoragePolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheStoragePolicy.m; sourceTree = "<group>"; };
+		F4D6BC8E1A9F43E100742FEB /* CanonicalRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanonicalRequest.h; sourceTree = "<group>"; };
+		F4D6BC8F1A9F43E100742FEB /* CanonicalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanonicalRequest.m; sourceTree = "<group>"; };
+		F4D6BC901A9F43E100742FEB /* CustomHTTPProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHTTPProtocol.h; sourceTree = "<group>"; };
+		F4D6BC911A9F43E100742FEB /* CustomHTTPProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHTTPProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +43,10 @@
 		F4D6BC561A9F2FDC00742FEB = {
 			isa = PBXGroup;
 			children = (
+				F4D6BC8B1A9F3AC500742FEB /* BSPreviewPluginInterface.h */,
+				F4D6BC891A9F3A6D00742FEB /* BSLinkPreviewDelegating.h */,
+				F4D6BC881A9F3A6700742FEB /* PSPreviewerInterface.h */,
+				F4D6BC6F1A9F336300742FEB /* CustomHTTPProtocol */,
 				F4D6BC611A9F2FDC00742FEB /* AdBlockForBS */,
 				F4D6BC601A9F2FDC00742FEB /* Products */,
 			);
@@ -41,6 +63,8 @@
 		F4D6BC611A9F2FDC00742FEB /* AdBlockForBS */ = {
 			isa = PBXGroup;
 			children = (
+				F4D6BC691A9F30D600742FEB /* AdBlockForBS.h */,
+				F4D6BC6A1A9F30D600742FEB /* AdBlockForBS.m */,
 				F4D6BC621A9F2FDC00742FEB /* Supporting Files */,
 			);
 			path = AdBlockForBS;
@@ -52,6 +76,19 @@
 				F4D6BC631A9F2FDC00742FEB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4D6BC6F1A9F336300742FEB /* CustomHTTPProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				F4D6BC8C1A9F43E100742FEB /* CacheStoragePolicy.h */,
+				F4D6BC8D1A9F43E100742FEB /* CacheStoragePolicy.m */,
+				F4D6BC8E1A9F43E100742FEB /* CanonicalRequest.h */,
+				F4D6BC8F1A9F43E100742FEB /* CanonicalRequest.m */,
+				F4D6BC901A9F43E100742FEB /* CustomHTTPProtocol.h */,
+				F4D6BC911A9F43E100742FEB /* CustomHTTPProtocol.m */,
+			);
+			name = CustomHTTPProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D6BC941A9F43E100742FEB /* CustomHTTPProtocol.m in Sources */,
+				F4D6BC921A9F43E100742FEB /* CacheStoragePolicy.m in Sources */,
+				F4D6BC6B1A9F30D600742FEB /* AdBlockForBS.m in Sources */,
+				F4D6BC931A9F43E100742FEB /* CanonicalRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,9 +246,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AdBlockForBS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/BathyScaphe/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -217,9 +258,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = AdBlockForBS/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Application Support/BathyScaphe/";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
