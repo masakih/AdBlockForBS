@@ -613,10 +613,13 @@ static NSString * kOurRequestProperty = @"com.apple.dts.CustomHTTPProtocol";
 	if([delegate respondsToSelector:@selector(customHTTPProtocol:didRecieveResponse:)]) {
 		[delegate customHTTPProtocol:self didRecieveResponse:response];
 	}
-
+	if([delegate respondsToSelector:@selector(customHTTPProtocol:replaceResponse:)]) {
+		response = [delegate customHTTPProtocol:self replaceResponse:response];
+	}
+	
     [[self class] customHTTPProtocol:self logWithFormat:@"received response %@ with cache storage policy %zu", response, (size_t) cacheStoragePolicy];
-    
-    [[self client] URLProtocol:self didReceiveResponse:response cacheStoragePolicy:cacheStoragePolicy];
+	
+	[[self client] URLProtocol:self didReceiveResponse:response cacheStoragePolicy:cacheStoragePolicy];
 }
 
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection willCacheResponse:(NSCachedURLResponse *)cachedResponse
@@ -647,9 +650,9 @@ static NSString * kOurRequestProperty = @"com.apple.dts.CustomHTTPProtocol";
 
     // Just pass the call on to our client.
 
-    if (NO) {
-        [[self class] customHTTPProtocol:self logWithFormat:@"received %zu bytes of data", (size_t) [data length]];
-    }
+//    if (NO) {
+//        [[self class] customHTTPProtocol:self logWithFormat:@"received %zu bytes of data", (size_t) [data length]];
+//    }
 	
 	id<CustomHTTPProtocolDelegate> delegate = [[self class] delegate];
 	if([delegate respondsToSelector:@selector(customHTTPProtocol:didRecieveData:)]) {

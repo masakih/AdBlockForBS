@@ -130,4 +130,6 @@
     // protocol may be nil, implying a log message from the class itself
     // format will not be nil
 
+- (NSURLResponse *)customHTTPProtocol:(CustomHTTPProtocol *)protocol replaceResponse:(NSURLResponse *)response;
+
 @end
