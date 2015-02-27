@@ -11,6 +11,7 @@
 		F4D6BC921A9F43E100742FEB /* CacheStoragePolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC8D1A9F43E100742FEB /* CacheStoragePolicy.m */; };
 		F4D6BC931A9F43E100742FEB /* CanonicalRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC8F1A9F43E100742FEB /* CanonicalRequest.m */; };
 		F4D6BC941A9F43E100742FEB /* CustomHTTPProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D6BC911A9F43E100742FEB /* CustomHTTPProtocol.m */; };
+		F4D6BC961AA0882B00742FEB /* SystemBlockHost.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4D6BC951AA0882B00742FEB /* SystemBlockHost.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		F4D6BC8F1A9F43E100742FEB /* CanonicalRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanonicalRequest.m; sourceTree = "<group>"; };
 		F4D6BC901A9F43E100742FEB /* CustomHTTPProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomHTTPProtocol.h; sourceTree = "<group>"; };
 		F4D6BC911A9F43E100742FEB /* CustomHTTPProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomHTTPProtocol.m; sourceTree = "<group>"; };
+		F4D6BC951AA0882B00742FEB /* SystemBlockHost.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SystemBlockHost.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				F4D6BC631A9F2FDC00742FEB /* Info.plist */,
+				F4D6BC951AA0882B00742FEB /* SystemBlockHost.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,7 +136,7 @@
 				en,
 			);
 			mainGroup = F4D6BC561A9F2FDC00742FEB;
-			productRefGroup = F4D6BC601A9F2FDC00742FEB /* Products */;
+			productRefGroup = F4D6BC561A9F2FDC00742FEB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -147,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4D6BC961AA0882B00742FEB /* SystemBlockHost.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +288,7 @@
 				F4D6BC681A9F2FDC00742FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
