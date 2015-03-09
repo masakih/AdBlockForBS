@@ -2,26 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
+	<string>tkssp.com</string>
+	<string>adresult.jp</string>
+	<string>adresult.genieesspv.jp</string>
+	<string>media.gssp.asia</string>
+	<string>rt.gsspat.jp</string>
+	<string>sync.fout.jp</string>
+	<string>cs.gssprt.jp</string>
+	<string>sync-dsp.ad-m.asia</string>
+	<string>cast-cs-j.adtdp.com</string>
+	<string>sync.mathtag.com</string>
+	<string>x.bidswitch.net</string>
 	<string>i.socdm.com</string>
 	<string>d.socdm.com</string>
 	<string>spad.i-mobile.co.jp</string>
-	<string>vsc.send.microad.jp</string>
+	<string>spcdnpc.i-mobile.co.jp</string>
+	<string>spnet2-1.i-mobile.co.jp</string>
 	<string>ssp-bidder.i-mobile.co.jp</string>
 	<string>spdeliver.i-mobile.co.jp</string>
+	<string>xid.i-mobile.co.jp</string>
+	<string>spnet33.i-mobile.co.jp</string>
+	<string>vsc.send.microad.jp</string>
 	<string>adf.send.microad.jp</string>
-	<string>spnet2-1.i-mobile.co.jp</string>
 	<string>adc.medibaad.com</string>
 	<string>bid.g.doubleclick.net</string>
-	<string>js.kau.li</string>
+	<string>cm.g.doubleclick.net</string>
 	<string>ssp.advg.jp</string>
-	<string>spcdnpc.i-mobile.co.jp</string>
+	<string>dex.advg.jp</string>
 	<string>55978.y.kau.li</string>
 	<string>55979.y.kau.li</string>
+	<string>js.kau.li</string>
 	<string>54173.y.kau.li</string>
-	<string>ad.maist.jp</string>
 	<string>ad.kau.li</string>
-	<string>spnet33.i-mobile.co.jp</string>
+	<string>ad.maist.jp</string>
 	<string>bn.maist.jp</string>
-	<string>xid.i-mobile.co.jp</string>
 </array>
 </plist>
